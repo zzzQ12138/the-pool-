@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(236, 230, 230);
+}
+
+.contr {
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* 功能按钮全局设置 */
+.contr>div {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(151, 151, 151);
+}
+
+/* 悬停和点击的动画 */
+.contr>div:hover,
+main>.word:hover {
+    transform: scale(1.2);
+    /* 缩放 */
+    transition: transform 0.3s ease;
+    /* 平滑动画 */
+}
+
+.inf-box {
+    background-color: red;
+}
+
+.add-box {
+    background-color: orange;
+}
+
+.ran-box {
+    background-color: rgb(234, 234, 31);
+}
+
+.cou-box {
+    background-color: green;
+}
+
+.del-box {
+    background-color: aqua;
+}
+
+.cle-box {
+    background-color: blue;
+}
+
+.theme-box {
+    background-color: purple;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 50px;
+    z-index: 100;
+}
+
+/* 模态框、添加框、词条正文全局设置 */
+.mod,
+.add,
+.content,
+.cou {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: auto;
+    width: auto;
+    z-index: 1000;
+    border: solid gray;
+    box-shadow: 2px 2px 5px gray;
+    padding: 30px;
+    margin: auto;
+    display: none;
+}
+
+
+
+.clo-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    background-color: #45adf2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 添加功能 */
+.add {
+    z-index: 900;
+}
+
+.text-input,
+.area-input,
+.cou-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.area-input {
+    height: 150px;
+    resize: vertical;
+    /* 设置只能高度变化 */
+}
+
+.sub-btn,
+.ser-btn {
+    background-color: #45adf2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.word {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    background-color: #45adf2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.cou-box.disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.clobtn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -6px;   
+    top: -6px;    
+    background-color: #e93114;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.couter > div{
+    background-color: rgb(0, 0, 0);
+}

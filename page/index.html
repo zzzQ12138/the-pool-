@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pool - 随机笔记与灵感管理工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="contr">
+            <div class="inf-box" id="inf-box">说明</div>
+            <div class="add-box" id="add-box">添加</div>
+            <div class="ran-box" id="ran-box">随机</div>
+            <div class="cou-box" id="cou-box">数量</div>
+            <div class="del-box" id="del-box">删除</div>
+            <div class="cle-box" id="cle-box">清空</div>
+            <div class="theme-box" id="theme-box">主题</div>
+        </div>
+    </nav>
+    <main>
+        <div class="mod" id="mod">
+            <div class="mod-con">
+                <p id="mod-text"></p>
+            </div>
+            <span class="clo-btn" id="clo-btn"> &times; </span>
+        </div>
+        <div class="add" id="add">
+            <input type="text" class="text-input" id="text-input" placeholder="输入标题">
+            <textarea class="area-input" id="area-input" placeholder="输入内容"></textarea>
+            <button class="sub-btn" id="sub-btn">添加</button>
+            <span class="clo-btn" id="re-clo-btn"> &times; </span>
+        </div>
+        <div class="cou" id="cou">
+            <input type="number" class="cou-input" id="cou-input" value="5">
+            <button class="ser-btn" id="ser-btn">保存</button>
+            <span class="clo-btn" id="se-clo-btn"> &times; </span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
